@@ -1,0 +1,53 @@
+# Build directories
+garnet_kernel_build/
+build/
+out/
+output/
+
+# Build artifacts
+*.zip
+*.img
+*.dtb
+*.ko
+*.o
+*.log
+
+# Kernel build files
+.config
+.config.old
+System.map
+vmlinux
+*.cmd
+.tmp_versions/
+modules.builtin
+modules.order
+
+# Temporary files
+*~
+*.tmp
+*.swp
+*.swo
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Android NDK
+android-ndk*/
+ndk-*/
+
+# Toolchain
+toolchain/
+prebuilts/
+
+# Git
+.git/
+
+# Backup files
+*.bak
+*.backup
