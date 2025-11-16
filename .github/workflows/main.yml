@@ -34,7 +34,7 @@ jobs:
       - name: Build
         run: |
           cd kernel
-          wget https://raw.githubusercontent.com/RedEnemy30/garnet-kernel-builder/main/build.sh && chmod +x ./build.sh
+          wget https://raw.githubusercontent.com/RedEnemy30/garnet-kernel-builder/master/build.sh && chmod +x ./build.sh
           echo "Building kernel"
           ./build.sh
 
