@@ -32,7 +32,7 @@ jobs:
           cd kernel
           wget https://raw.githubusercontent.com/RedEnemy30/garnet-kernel-builder/master/build_garnet_kernel.sh && chmod +x ./build_garnet_kernel.sh
           echo "Building kernel"
-          ./build.sh
+          ./build_garnet_kernel.sh
 
       - name: Extract Version Info
         id: extract_version_info
