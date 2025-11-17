@@ -106,11 +106,7 @@ setup_toolchain() {
     log_info "Setting up cross-compilation toolchain..."
     
     # Check if Android NDK or prebuilt toolchain exists
-    if [ -n "$ANDROID_NDK_HOME" ] && [ -d "$ANDROID_NDK_HOME" ]; then
-        #export CROSS_COMPILE="$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-"
-        #export CC="$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android29-clang"
-        #log_success "Using Android NDK toolchain"
-    elif command -v aarch64-linux-gnu-gcc &> /dev/null; then
+    if command -v aarch64-linux-gnu-gcc &> /dev/null; then
         export CROSS_COMPILE="aarch64-linux-gnu-"
         export CC="aarch64-linux-gnu-gcc"
         log_success "Using system aarch64 toolchain"
