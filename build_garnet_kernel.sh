@@ -295,7 +295,7 @@ setup_susfs() {
     if [ ! -d "$SUSFS_DIR" ]; then
         log_info "Cloning SUSFS repository..."
         # Use the main SUSFS repository that works with KernelSU
-        git clone https://github.com/sidex15/susfs4ksu-module.git susfs
+        git clone https://gitlab.com/simonpunk/susfs4ksu.git -b gki-android12-5.10 --depth=1
     else
         log_info "Updating SUSFS repository..."
         cd "$SUSFS_DIR" && git pull && cd "$BUILD_DIR"
