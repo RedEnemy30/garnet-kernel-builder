@@ -19,7 +19,7 @@ jobs:
       - name: Setup packages
         run: |
           sudo apt-get update -y
-          sudo apt install git make bc bison flex libssl-dev libelf-dev zip gcc-aarch64-linux-gnu
+          sudo apt install git gcc-aarch64-linux-gnu python3 git curl ccache libelf-dev build-essential flex bison libssl-dev libncurses-dev liblz4-tool zlib1g-dev libxml2-utils rsync unzip gawk patch
 
       - name: Set swap to 10G
         uses: pierotofy/set-swap-space@master
